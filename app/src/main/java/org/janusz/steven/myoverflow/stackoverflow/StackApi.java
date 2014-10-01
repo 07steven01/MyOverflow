@@ -1,4 +1,4 @@
-package org.janusz.steven.myoverflow;
+package org.janusz.steven.myoverflow.stackoverflow;
 
 import retrofit.Callback;
 import retrofit.http.Field;
@@ -10,6 +10,7 @@ import retrofit.http.POST;
  */
 public interface StackApi {
 
+    // not applicable...
     @FormUrlEncoded
     @POST("/oauth") void getAccessTokenAsync(
             @Field("username") String email,

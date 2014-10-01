@@ -1,4 +1,4 @@
-package org.janusz.steven.myoverflow;
+package org.janusz.steven.myoverflow.stackoverflow;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -7,6 +7,7 @@ import retrofit.http.Field;
 /**
  * Created by marek on 30.09.14.
  */
+//TODO bind response url to this class
 public class AccessToken {
     @SerializedName("access_token") String accessToken;
     @SerializedName("refresh_token") String refreshToken;

@@ -1,4 +1,4 @@
-package org.janusz.steven.myoverflow;
+package org.janusz.steven.myoverflow.stackoverflow;
 
 import retrofit.RestAdapter;
 
