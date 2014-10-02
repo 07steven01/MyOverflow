@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
 import timber.log.Timber;
 
 
@@ -44,6 +45,10 @@ public class MainActivity extends Activity implements GetTokenFragment.TokenRece
     @Override
     public void onTokenReceived(String token) {
         // TODO open fragment to present api call results: get all unanswered
+        ((App) getApplication()).setAccessToken(token);
+        getFragmentManager().beginTransaction().replace(R.id.container,
+                new MyOverflowResultsFragment()).
+                commit();
     }
 
 

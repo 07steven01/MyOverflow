@@ -2,8 +2,6 @@ package org.janusz.steven.myoverflow.stackoverflow;
 
 import com.google.gson.annotations.SerializedName;
 
-import retrofit.http.Field;
-
 /**
  * Created by marek on 30.09.14.
  */
